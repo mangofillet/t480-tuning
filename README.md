@@ -1,8 +1,11 @@
 # ThinkPad T480 / T480s Tuning Toolkit
 
+![ThinkPad T480](assets/thinkpad-t480.jpg)
+<sub>Photo: Elizabeth K. Joseph, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:ThinkPad_T480.jpg)</sub>
+
 Scripts + methodology to safely undervolt an 8th-gen ThinkPad (T480/T480s, i7-8550U or similar), raise its real sustained power limits, and fix the stock fan curve — recovering clock speed and battery life the firmware leaves on the table, without guessing your way into a crash.
 
-Validated on a real ThinkPad T480 (i7-8550U, Ubuntu 24.04) over several days of iteration. T480s shares the same board family and CPU generation, so this should transfer directly — but see the safety section below: **your chip's safe limits are not the same as this author's,** and the scripts are written to help you find your own, not to hand you a fixed number to copy.
+Validated on a real ThinkPad T480 (i7-8550U, Linux Mint 22.3 Cinnamon — Ubuntu/Debian-based, so `apt`/`systemd` commands below apply as-is) over several days of iteration. T480s shares the same board family and CPU generation, so this should transfer directly — but see the safety section below: **your chip's safe limits are not the same as this author's,** and the scripts are written to help you find your own, not to hand you a fixed number to copy.
 
 ## The problem this solves
 
