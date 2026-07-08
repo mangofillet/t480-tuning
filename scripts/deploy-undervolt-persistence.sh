@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# ============================================================================
+# WARNING: DO NOT AGGRESSIVELY UNDERVOLT. Step in small increments, never big
+# jumps. If you see ANY freeze, crash, reboot, or hardware error (dmesg/
+# journalctl MCE/WHEA) -- during testing or days later in normal use --
+# IMMEDIATELY revert OFFSETS below to stock (0 mV) or your last value
+# confirmed stable over days of real use, then re-run this script.
+# ============================================================================
 # Installs boot + resume-from-suspend persistence for the T480 core/cache undervolt.
 # Run with: sudo bash ./deploy-undervolt-persistence.sh
 set -euo pipefail

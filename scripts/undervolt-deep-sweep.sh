@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# ============================================================================
+# WARNING: DO NOT AGGRESSIVELY UNDERVOLT. This sweep steps in -10mV increments
+# on purpose -- do not widen the steps. If you see ANY freeze, crash, or
+# hardware error at any rung, STOP -- do not push further "to see." The trap
+# below auto-reverts to a safe value on exit/error, but that only protects
+# THIS session; re-check dmesg/journalctl afterward before trusting anything.
+# ============================================================================
 # Deep core/cache undervolt sweep -- hunts past the -90mV already confirmed.
 # Run with: sudo bash ./undervolt-deep-sweep.sh
 #

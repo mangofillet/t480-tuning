@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# ============================================================================
+# WARNING: DO NOT AGGRESSIVELY UNDERVOLT. If you see ANY freeze, crash, or
+# hardware error at any step, STOP immediately -- revert to stock (0 mV) or
+# your last confirmed-stable value. Do not push deeper "to see how far it goes."
+# ============================================================================
 # Incremental core/cache undervolt stability test.
 # Run with: sudo bash ./undervolt-stability-test.sh
 #

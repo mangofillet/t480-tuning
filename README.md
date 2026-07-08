@@ -1,5 +1,9 @@
 # ThinkPad T480 / T480s Tuning Toolkit
 
+> [!WARNING]
+> ## DO NOT AGGRESSIVELY UNDERVOLT
+> Push in **small steps**, not big jumps. If you see **any** freeze, crash, reboot, or hardware error (`dmesg`/`journalctl` showing MCE/WHEA) — during a sweep, a stability test, or days later in normal use — **immediately revert to a safe level**: either **stock (0 mV)** or the **last value you had already confirmed stable for real, over days, not minutes**. Do not keep pushing past an instability signal to "just check one more step." A value that looks clean in a short test can still be the one that crashes your machine for real later — see the soak-testing section below.
+
 ![ThinkPad T480](assets/thinkpad-t480.jpg)
 <sub>Photo: Elizabeth K. Joseph, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:ThinkPad_T480.jpg)</sub>
 
